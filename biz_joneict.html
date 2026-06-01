@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>(주)제이원아이씨티 | 경주 정보통신·관급 공사 전문 — 사진·소개·문의</title>
+<meta name="description" content="(주)제이원아이씨티 업체 상세. 경주 정보통신공사 전문, 재난예경보·전광판·음향영상·IoT·네트워크·CCTV. 시공 사진·소개·전화·견적 상담 예약. 나라장터 등록업체.">
+<meta name="keywords" content="제이원아이씨티, 경주 정보통신공사 업체, 경주 관급 통신업체, 재난예경보 시공업체, 경주 CCTV 업체, 정보통신공사업 면허업체">
+<meta property="og:title" content="(주)제이원아이씨티 | 경주 정보통신·관급 공사 전문">
+<meta property="og:description" content="시공 사진·소개·전화·견적 상담 예약. 경주 정보통신공사 전문 나라장터 등록업체.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{--navy:#0b1f3a;--blue:#1e63b0;--gold:#d4af37;--bg:#f1f4f9;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Pretendard","Malgun Gothic",sans-serif;color:#1a2230;background:var(--bg);line-height:1.7;}
+  a{color:inherit;}
+  .portal{position:sticky;top:0;z-index:50;background:#091830;color:#cfe;font-size:13px;padding:10px 22px;display:flex;justify-content:space-between;align-items:center;}
+  .portal b{color:#fff;}.portal a.back{color:#9fd0ff;text-decoration:none;}
+  /* 사진 갤러리 */
+  .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:130px 130px;gap:6px;max-width:1000px;margin:0 auto;padding:6px;}
+  .gallery .main{grid-row:1/3;grid-column:1;}
+  .gallery div{background-size:cover;background-position:center;border-radius:8px;}
+  .wrap{max-width:1000px;margin:0 auto;padding:10px 20px 50px;}
+  /* 헤더 카드 */
+  .head{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 20px rgba(11,31,58,.08);margin-top:10px;}
+  .head .badge{display:inline-block;background:#fff4d6;color:#a9851a;border:1px solid var(--gold);font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;}
+  .head h1{font-size:28px;color:var(--navy);margin:10px 0 4px;}
+  .head .stars{color:var(--gold);font-size:18px;}
+  .head .stars small{color:#6b7889;font-size:13px;}
+  .head .tags{margin-top:10px;}
+  .head .tags span{display:inline-block;background:#eef2f8;color:#34507e;font-size:12px;padding:4px 10px;border-radius:5px;margin:4px 4px 0 0;}
+  /* 액션 버튼 바 */
+  .actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:18px;}
+  .actions a{display:flex;flex-direction:column;align-items:center;gap:4px;padding:14px 8px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;}
+  .actions .call{background:#e02440;color:#fff;}
+  .actions .book{background:var(--blue);color:#fff;}
+  .actions .map{background:#0b8457;color:#fff;}
+  .actions .kakao{background:#fae100;color:#3a1d1d;}
+  .actions .home{background:#eef2f8;color:var(--navy);border:1px solid #d3deec;}
+  .actions .ic{font-size:22px;}
+  h2{font-size:21px;color:var(--navy);margin:34px 0 14px;display:flex;align-items:center;gap:10px;}
+  h2 .bar{width:6px;height:24px;background:var(--blue);border-radius:3px;}
+  .card{background:#fff;border-radius:14px;padding:24px;box-shadow:0 4px 16px rgba(11,31,58,.06);}
+  .info td{padding:11px 8px;border-bottom:1px solid #eef2f7;font-size:15px;vertical-align:top;}
+  .info td:first-child{color:#6b7889;width:110px;font-weight:600;}
+  .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;}
+  .grid4 .g{position:relative;height:130px;border-radius:10px;overflow:hidden;}
+  .grid4 .g img{width:100%;height:100%;object-fit:cover;transition:.3s;}
+  .grid4 .g:hover img{transform:scale(1.08);}
+  .grid4 .g span{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(11,31,58,.85));color:#fff;font-size:13px;font-weight:700;padding:18px 10px 8px;}
+  /* 예약/문의 폼 */
+  form.book{display:grid;gap:12px;}
+  form.book input,form.book select,form.book textarea{width:100%;padding:12px 14px;border:1px solid #d3deec;border-radius:10px;font-size:15px;font-family:inherit;}
+  form.book .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  form.book button{background:var(--blue);color:#fff;border:none;padding:15px;border-radius:12px;font-size:17px;font-weight:800;cursor:pointer;}
+  .note{font-size:12px;color:#8a99ad;}
+  iframe{width:100%;height:300px;border:0;border-radius:14px;}
+  footer{background:#06152b;color:#7e93b3;text-align:center;padding:24px;font-size:13px;margin-top:40px;}
+  @media(max-width:640px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:120px 120px;}.gallery .main{grid-row:1;grid-column:1/3;}form.book .row{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="portal"><span><b>경주ICT가이드</b> · 업체 상세</span><a class="back" href="01_disaster-alert.html">← 목록으로</a></div>
+
+<!-- 사진 갤러리 -->
+<div class="gallery">
+  <div class="main" style="background-image:url('https://picsum.photos/seed/jonemain/800/520')"></div>
+  <div style="background-image:url('https://picsum.photos/seed/jone1/400/260')"></div>
+  <div style="background-image:url('https://picsum.photos/seed/jone2/400/260')"></div>
+  <div style="background-image:url('https://picsum.photos/seed/jone3/400/260')"></div>
+  <div style="background-image:url('https://picsum.photos/seed/jone4/400/260')"></div>
+</div>
+
+<div class="wrap">
+  <div class="head">
+    <span class="badge">⭐ 프리미엄 입점 업체</span>
+    <h1>(주)제이원아이씨티</h1>
+    <div class="stars">★★★★★ <small>경주 정보통신·관급 공사 전문 · 나라장터 등록업체</small></div>
+    <div class="tags"><span>재난예경보</span><span>전광판</span><span>음향영상</span><span>IoT</span><span>네트워크</span><span>CCTV</span><span>정보통신공사업 면허</span></div>
+    <div class="actions">
+      <a class="call" href="tel:054-624-0401"><span class="ic">📞</span>전화하기</a>
+      <a class="book" href="#book"><span class="ic">📅</span>견적·상담 예약</a>
+      <a class="map" href="https://maps.google.com/?q=경주시 동대로 123" target="_blank" rel="noopener"><span class="ic">🗺️</span>길찾기</a>
+      <a class="kakao" href="#book"><span class="ic">💬</span>카톡상담</a>
+      <a class="home" href="https://joneict.kr" target="_blank" rel="noopener"><span class="ic">🌐</span>공식홈페이지</a>
+    </div>
+  </div>
+
+  <h2><span class="bar"></span>업체 소개</h2>
+  <div class="card">
+    <p>(주)제이원아이씨티는 경주에 본사를 둔 정보통신공사 전문기업입니다. <strong>재난예경보 시스템, 전광판, 음향영상시설, IoT·스마트시티, 네트워크 구축, CCTV·영상보안</strong>까지 정보통신 전 분야를 한 곳에서 설계·시공·납품합니다. 정보통신공사업 면허(경북 제540442호)를 보유하고 <strong>나라장터 종합쇼핑몰 등록업체</strong>로서 관공서·학교·지자체의 관급 발주를 견적부터 준공·사후관리까지 일괄 처리합니다. 경주 현지 기업이라 현장 실사와 A/S 출동이 빠르며, 포항·울산·경산·영천 등 경북 동남권까지 시공합니다.</p>
+  </div>
+
+  <h2><span class="bar"></span>기본 정보</h2>
+  <div class="card">
+    <table class="info" style="width:100%;border-collapse:collapse;">
+      <tr><td>업체명</td><td>(주)제이원아이씨티</td></tr>
+      <tr><td>분야</td><td>정보통신공사 (재난예경보·전광판·음향영상·IoT·네트워크·CCTV)</td></tr>
+      <tr><td>면허</td><td>정보통신공사업 경북 제540442호 / 소프트웨어사업자</td></tr>
+      <tr><td>조달</td><td>나라장터 종합쇼핑몰 등록업체 (관급 납품)</td></tr>
+      <tr><td>주소</td><td>경북 경주시 동대로 123, 산학협력관 304호</td></tr>
+      <tr><td>전화</td><td><a href="tel:054-624-0401" style="color:#e02440;font-weight:700;">054-624-0401</a></td></tr>
+      <tr><td>대응지역</td><td>경주·포항·울산·경산·영천 (경북 동남권)</td></tr>
+    </table>
+  </div>
+
+  <h2><span class="bar"></span>시공 분야·사례</h2>
+  <div class="grid4">
+    <div class="g"><img src="https://picsum.photos/seed/jd1/300/200" alt="재난예경보 시공"><span>재난예경보</span></div>
+    <div class="g"><img src="https://picsum.photos/seed/jd2/300/200" alt="전광판 시공"><span>전광판</span></div>
+    <div class="g"><img src="https://picsum.photos/seed/jd3/300/200" alt="음향영상 시공"><span>음향영상</span></div>
+    <div class="g"><img src="https://picsum.photos/seed/jd4/300/200" alt="CCTV 시공"><span>CCTV·관제</span></div>
+  </div>
+
+  <h2 id="book"><span class="bar"></span>견적·상담 예약</h2>
+  <div class="card">
+    <form class="book" action="https://formsubmit.co/joneict04@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="[경주ICT가이드] 견적·상담 예약 신청">
+      <input type="hidden" name="_template" value="table">
+      <div class="row">
+        <input name="이름" placeholder="이름 / 기관명" required>
+        <input name="연락처" placeholder="연락처 (휴대폰)" required>
+      </div>
+      <select name="관심분야">
+        <option>관심 분야 선택</option>
+        <option>재난예경보 시스템</option><option>마을방송</option><option>전광판</option>
+        <option>교통전광판</option><option>음향영상시설</option><option>IoT·스마트시티</option>
+        <option>네트워크 구축</option><option>CCTV·영상보안</option><option>관급·조달</option>
+        <option>정보통신설비 유지보수·성능점검</option>
+      </select>
+      <textarea name="문의내용" rows="4" placeholder="문의 내용 (현장 위치, 규모, 일정 등을 적어주시면 정확한 견적이 가능합니다)"></textarea>
+      <button type="submit">📩 견적·상담 신청하기</button>
+      <p class="note">* 신청 시 업체에 연락처가 전달되어 상담 연락을 드립니다. 급하시면 ☎ 054-624-0401로 바로 전화 주세요.</p>
+    </form>
+  </div>
+
+  <h2><span class="bar"></span>오시는 길</h2>
+  <div class="card" style="padding:10px;">
+    <iframe src="https://maps.google.com/maps?q=경주시%20동대로%20123&z=15&output=embed" loading="lazy" title="제이원아이씨티 위치"></iframe>
+  </div>
+</div>
+<footer>경주ICT가이드 — 경주 정보통신 업체 정보 포털<br><small>사진은 데모이며 실제 시공 사진으로 교체 예정 · 예약폼은 formsubmit.co 활성화 후 작동</small></footer>
+</body>
+</html>
