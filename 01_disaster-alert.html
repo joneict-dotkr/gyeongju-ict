@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>경주 재난예경보시스템 업체 추천 | 자동우량경보·비상경보 시공업체 정보</title>
+<meta name="description" content="경주 재난예경보시스템 시공업체 추천·비교 정보. 자동우량경보·비상경보·민방위경보 설비, 관급 발주 가능 업체를 한눈에. 업체 선택 체크포인트와 비용 안내.">
+<meta name="keywords" content="경주 재난예경보시스템, 경주 비상경보시스템, 경주 민방위경보, 재난방송설비, 재난예경보 업체 추천, 자동우량경보, 풍수해 예경보, 관급 재난예경보">
+<meta property="og:title" content="경주 재난예경보시스템 업체 추천 | 시공업체 정보">
+<meta property="og:description" content="경주 재난예경보시스템 시공업체 추천·비교. 자동우량경보·비상경보·관급 발주 업체 정보.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<!-- ⚠ 이미지는 미리보기용 데모(picsum)입니다. 실제 배포 시 자체 시공 사진(WebP)으로 교체하세요. -->
+<style>
+  :root{--navy:#0b1f3a;--red:#e02440;--steel:#2c4a7c;--gold:#d4af37;--bg:#eef1f6;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Pretendard","Malgun Gothic",sans-serif;color:#1a2230;background:var(--bg);line-height:1.7;}
+  a{color:inherit;}
+  .portal{position:sticky;top:0;z-index:50;background:#091830;color:#dce6f5;font-size:13px;padding:10px 22px;display:flex;justify-content:space-between;align-items:center;}
+  .portal b{color:#fff;}
+  .portal .rentlink{background:var(--gold);color:#091830;padding:5px 14px;border-radius:20px;font-weight:700;text-decoration:none;}
+  /* HERO */
+  .hero{position:relative;min-height:430px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:70px 20px;
+        background:linear-gradient(rgba(11,31,58,.86),rgba(44,74,124,.74)),url('https://picsum.photos/seed/gjdisaster/1500/700') center/cover;}
+  .hero .alert{display:inline-block;background:var(--red);padding:7px 18px;border-radius:30px;font-weight:700;font-size:13px;letter-spacing:1px;margin-bottom:18px;box-shadow:0 0 0 6px rgba(224,36,64,.25);}
+  .hero h1{font-size:40px;font-weight:800;line-height:1.25;text-shadow:0 4px 24px rgba(0,0,0,.4);}
+  .hero p{font-size:18px;opacity:.95;max-width:720px;margin:16px auto 0;}
+  .hero .meta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .hero .meta span{background:rgba(255,255,255,.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.35);padding:9px 16px;border-radius:10px;font-size:14px;}
+  .wrap{max-width:1000px;margin:0 auto;padding:46px 20px;}
+  .crumb{font-size:13px;color:#7488a0;margin-bottom:18px;}
+  h2{font-size:26px;color:var(--navy);margin:46px 0 18px;display:flex;align-items:center;gap:12px;}
+  h2 .bar{width:8px;height:30px;background:var(--red);border-radius:4px;}
+  .lead{font-size:18px;background:#fff;border-radius:14px;padding:28px;box-shadow:0 8px 26px rgba(11,31,58,.08);border-left:5px solid var(--navy);}
+  /* 중요 포인트 (먼저) */
+  .points{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+  .pt{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 20px rgba(11,31,58,.07);transition:.25s;border-bottom:4px solid var(--steel);}
+  .pt:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(11,31,58,.14);}
+  .pt .ic{width:54px;height:54px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--steel));display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:12px;}
+  .pt h3{color:var(--navy);font-size:18px;margin-bottom:6px;}
+  .pt p{color:#5a6877;font-size:15px;}
+  /* 시공 사진 갤러리 */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+  .gtile{position:relative;height:180px;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.12);}
+  .gtile img{width:100%;height:100%;object-fit:cover;transition:.4s;}
+  .gtile:hover img{transform:scale(1.08);}
+  .gtile span{position:absolute;left:0;bottom:0;right:0;background:linear-gradient(transparent,rgba(11,31,58,.9));color:#fff;padding:24px 16px 12px;font-weight:700;font-size:15px;}
+  /* 추천 업체 슬롯 (나중에) */
+  .slots{display:flex;flex-direction:column;gap:18px;}
+  .slot{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 20px rgba(0,0,0,.08);display:flex;gap:22px;align-items:center;position:relative;border:1px solid #e6ebf2;text-decoration:none;color:inherit;transition:.25s;}
+  .slot.link:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(11,31,58,.16);border-color:var(--gold);}
+  .slot .logo{flex-shrink:0;width:92px;height:92px;border-radius:16px;background:linear-gradient(135deg,#0b1f3a,#2c4a7c);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:26px;letter-spacing:1px;}
+  .slot.premium{border:2px solid var(--gold);box-shadow:0 10px 30px rgba(212,175,55,.22);}
+  .slot.premium .logo{background:linear-gradient(135deg,var(--gold),#9c7d1e);}
+  .slot.premium::before{content:"⭐ 프리미엄 입점";position:absolute;top:-12px;left:24px;background:var(--gold);color:#3a2c00;font-size:12px;font-weight:800;padding:4px 14px;border-radius:20px;}
+  .slot .body{flex:1;}
+  .slot .body .rk{font-size:12px;color:#8a99ad;font-weight:700;}
+  .slot .body h3{color:var(--navy);font-size:21px;margin:2px 0 6px;}
+  .slot .body p{color:#5a6877;font-size:15px;}
+  .slot .tags{margin-top:10px;}
+  .slot .tags span{display:inline-block;background:#eef2f8;color:#34507e;font-size:12px;padding:4px 10px;border-radius:5px;margin:4px 4px 0 0;}
+  .slot .go{flex-shrink:0;text-align:center;}
+  .slot .go .btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;padding:12px 20px;border-radius:10px;font-size:15px;white-space:nowrap;}
+  .slot .go small{display:block;color:#8a99ad;margin-top:6px;font-size:12px;}
+  .slot.empty{border:2px dashed #b9c4d4;background:#fafbfd;justify-content:center;text-align:center;}
+  .slot.empty .logo{background:#dce3ec;color:#8a99ad;font-size:30px;}
+  .slot.empty h3{color:#7488a0;}
+  .slot.empty .apply{display:inline-block;margin-top:8px;background:var(--steel);color:#fff;font-weight:700;padding:10px 20px;border-radius:10px;text-decoration:none;}
+  /* 임대 배너 */
+  .rentbanner{margin-top:28px;background:linear-gradient(135deg,#091830,#34507e);color:#fff;border-radius:18px;padding:32px;text-align:center;background-image:linear-gradient(135deg,rgba(9,24,48,.94),rgba(52,80,124,.9)),url('https://picsum.photos/seed/gjrent/1200/300');background-size:cover;}
+  .rentbanner h3{color:var(--gold);font-size:21px;margin-bottom:8px;}
+  .rentbanner .price{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:14px 0;}
+  .rentbanner .price span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:10px 16px;font-size:14px;}
+  .rentbanner a{display:inline-block;background:var(--gold);color:#3a2c00;font-weight:800;padding:13px 30px;border-radius:30px;text-decoration:none;margin-top:8px;}
+  .faq details{background:#fff;border-radius:12px;padding:16px 22px;margin:10px 0;box-shadow:0 3px 10px rgba(0,0,0,.05);}
+  .faq summary{font-weight:700;color:var(--navy);cursor:pointer;font-size:16px;}
+  .faq p{padding-top:10px;color:#4a5663;}
+  nav.foot{background:var(--navy);padding:26px 20px;text-align:center;}
+  nav.foot a{color:#cdd9ec;font-size:13px;margin:0 8px;text-decoration:none;line-height:2;}
+  footer{background:#06152b;color:#7e93b3;text-align:center;padding:24px;font-size:13px;}
+  @media(max-width:640px){.hero h1{font-size:28px;}.slot{flex-direction:column;text-align:center;}.slot .body{text-align:center;}}
+</style>
+</head>
+<body>
+<div class="portal"><span><b>경주ICT가이드</b> · 경주 정보통신 업체 정보 포털</span><a class="rentlink" href="#rent">▸ 광고 자리 임대</a></div>
+
+<section class="hero">
+  <div>
+    <span class="alert">⚠ 재난은 예고 없이 옵니다</span>
+    <h1>경주 재난예경보시스템<br>업체 추천</h1>
+    <p>자동우량경보·비상경보·민방위경보 설비를 시공하는 경주 지역 검증 업체 정보. 면허·관급 경험·A/S까지 비교하세요.</p>
+    <div class="meta"><span>🏅 정보통신공사업 면허 업체</span><span>🏛️ 관급·나라장터 발주 가능</span><span>📍 경주 현지 대응</span></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="crumb">홈 &gt; 재난·방재 &gt; 재난예경보시스템</div>
+  <p class="lead">홍수·산사태·지진 등 재난 상황에서 주민에게 신속·정확하게 경보를 전달하는 <strong>경주 재난예경보시스템</strong>은 한 치의 오차도 허용되지 않는 공공 안전 설비입니다. 자동우량경보시스템, 옥외확성방송, 재난문자전광판 등은 <strong>정보통신공사업 면허</strong>와 관급 시공 경험을 갖춘 업체에 맡기는 것이 안전합니다.</p>
+
+  <!-- 1) 중요 포인트 먼저 -->
+  <h2><span class="bar"></span>재난예경보 업체, 이렇게 선택하세요</h2>
+  <div class="points">
+    <div class="pt"><div class="ic">🏅</div><h3>① 면허 확인</h3><p>정보통신공사업 면허 보유 여부를 반드시 확인하세요. 무면허 시공은 준공·하자에서 문제가 됩니다.</p></div>
+    <div class="pt"><div class="ic">🏛️</div><h3>② 관급 경험</h3><p>나라장터 등록·관급 준공 경험이 있으면 지자체 발주 행정 처리가 수월합니다.</p></div>
+    <div class="pt"><div class="ic">🛠️</div><h3>③ A/S 체계</h3><p>재난 시 작동이 곧 생명입니다. 정기 성능점검·신속 출동 여부를 확인하세요.</p></div>
+    <div class="pt"><div class="ic">📍</div><h3>④ 현지 업체</h3><p>경주 현지 업체는 현장 실사와 사후관리 출동이 빠릅니다.</p></div>
+  </div>
+
+  <h2><span class="bar"></span>주요 시공 분야</h2>
+  <div class="gallery">
+    <div class="gtile"><img src="https://picsum.photos/seed/uryang/500/360" alt="경주 자동우량경보시스템 설치 현장"><span>자동우량경보시스템</span></div>
+    <div class="gtile"><img src="https://picsum.photos/seed/bisang/500/360" alt="경주 비상·민방위경보 방송 설비"><span>비상·민방위경보</span></div>
+    <div class="gtile"><img src="https://picsum.photos/seed/okwoe/500/360" alt="경주 옥외확성방송 스피커 설치"><span>옥외확성방송</span></div>
+    <div class="gtile"><img src="https://picsum.photos/seed/munja/500/360" alt="경주 재난문자전광판 설치"><span>재난문자전광판</span></div>
+  </div>
+
+  <!-- 2) 업체(슬롯) 나중에 -->
+  <h2 id="rent"><span class="bar"></span>경주 재난예경보 추천 업체</h2>
+  <div class="slots">
+    <!-- 1번 슬롯: 제이원아이씨티 → 클릭 시 업체 홈페이지로 이동 -->
+    <a class="slot premium link" href="https://joneict.kr" target="_blank" rel="noopener">
+      <div class="logo">J1<br>ICT</div>
+      <div class="body">
+        <div class="rk">1번 슬롯</div>
+        <h3>(주)제이원아이씨티 ↗</h3>
+        <p>경주 기반 정보통신공사 전문기업. 재난예경보·전광판·음향영상·네트워크·CCTV 통합 시공. 나라장터 등록업체로 관급 발주에 강합니다.</p>
+        <div class="tags"><span>면허 경북 제540442호</span><span>나라장터 등록</span><span>관급 시공</span><span>당일 대응</span></div>
+      </div>
+      <div class="go"><span class="btn">홈페이지 바로가기 ↗</span><small>☎ 054-624-0401</small></div>
+    </a>
+    <!-- 2번 슬롯 분양 중 -->
+    <div class="slot empty">
+      <div class="logo">🔓</div>
+      <div class="body"><h3>2번 슬롯 — 광고 자리 분양 중</h3><p>경주에서 재난예경보 설비를 시공하는 업체라면 이 자리에 노출하세요. 검색으로 유입된 발주처에 바로 연결됩니다.</p>
+      <a class="apply" href="#rent">입점 문의하기</a></div>
+    </div>
+    <!-- 3번 슬롯 분양 중 -->
+    <div class="slot empty">
+      <div class="logo">🔓</div>
+      <div class="body"><h3>3번 슬롯 — 광고 자리 분양 중</h3><p>월 광고비로 키워드 상위 노출 효과를 누리세요.</p>
+      <a class="apply" href="#rent">입점 문의하기</a></div>
+    </div>
+  </div>
+
+  <!-- 업체용 임대 안내 -->
+  <div class="rentbanner">
+    <h3>📣 이 페이지에 우리 업체를 노출하고 싶다면?</h3>
+    <p>"경주 재난예경보시스템" 검색으로 들어온 발주처·담당자에게 직접 노출됩니다.</p>
+    <br><a href="tel:054-624-0401">광고 자리 임대 문의 ▸</a>
+  </div>
+
+  <h2><span class="bar"></span>자주 묻는 질문</h2>
+  <div class="faq">
+    <details open><summary>Q. 재난예경보시스템에는 어떤 설비가 포함되나요?</summary><p>자동우량경보시스템, 비상·민방위경보, 옥외확성방송, 재난문자전광판 등이 포함됩니다.</p></details>
+    <details><summary>Q. 관급(조달)으로 발주할 수 있나요?</summary><p>나라장터 종합쇼핑몰 등록업체를 통하면 관급 견적·계약·납품·준공이 가능합니다.</p></details>
+    <details><summary>Q. 기존 마을방송 설비와 연동되나요?</summary><p>기존 옥외확성·앰프 설비를 점검 후 재난예경보 기능과 통합할 수 있습니다.</p></details>
+    <details><summary>Q. 설치 후 점검도 받을 수 있나요?</summary><p>정보통신설비 성능점검·정기 유지보수로 비상 시 작동을 보장받을 수 있습니다.</p></details>
+  </div>
+</div>
+
+<nav class="foot">
+  <a href="index.html">홈</a> · <a href="02_village-broadcast.html">마을방송</a> · <a href="03_led-display.html">전광판</a> · <a href="05_av-system.html">음향영상</a> · <a href="09_government.html">관급·조달</a> · <a href="10_maintenance.html">유지보수·성능점검</a>
+</nav>
+<footer>경주ICT가이드 — 경주 정보통신 업체 정보 포털 | 광고·입점 문의 환영<br><small>본 페이지는 업체 정보 제공 및 광고 게재 목적의 포털입니다. (이미지는 데모이며 실제 시공 사진으로 교체 예정)</small></footer>
+</body>
+</html>

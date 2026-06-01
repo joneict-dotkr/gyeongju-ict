@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>경주ICT가이드 | 경주 정보통신·관급 공사 업체 정보 포털</title>
+<meta name="description" content="경주 정보통신·관급 공사 업체 정보 포털. 재난예경보·전광판·음향영상·IoT·네트워크·CCTV·유지보수 분야별 추천 업체를 한눈에. 업체 입점·광고 문의 환영.">
+<meta name="keywords" content="경주 정보통신공사, 경주 관급 정보통신, 경주 재난예경보, 경주 전광판, 경주 CCTV, 경주 네트워크 구축, 경주 음향영상, 경주 정보통신설비 유지보수">
+<meta property="og:title" content="경주ICT가이드 | 경주 정보통신·관급 공사 업체 정보 포털">
+<meta property="og:description" content="분야별 경주 정보통신·관급 공사 추천 업체 정보. 업체 입점·광고 문의 환영.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{--navy:#0b1f3a;--blue:#1e63b0;--gold:#d4af37;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Pretendard","Malgun Gothic",sans-serif;color:#1a2230;background:#fff;line-height:1.7;}
+  a{color:inherit;}
+  .portal{position:sticky;top:0;z-index:50;background:#091830;color:#cfe;font-size:13px;padding:10px 22px;display:flex;justify-content:space-between;align-items:center;}
+  .portal b{color:#fff;}.portal .rentlink{background:var(--gold);color:#091830;padding:5px 14px;border-radius:20px;font-weight:700;text-decoration:none;}
+  .hero{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:80px 20px;
+        background:linear-gradient(120deg,rgba(11,31,58,.9),rgba(30,99,176,.78)),url('https://picsum.photos/seed/gjhub/1600/800') center/cover;}
+  .hero .badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);padding:7px 18px;border-radius:30px;font-size:14px;margin-bottom:16px;}
+  .hero h1{font-size:40px;font-weight:800;text-shadow:0 4px 22px rgba(0,0,0,.4);}
+  .hero p{font-size:18px;opacity:.95;margin-top:14px;max-width:720px;margin-left:auto;margin-right:auto;}
+  .hero .fields{margin-top:22px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;}
+  .hero .fields span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);padding:6px 14px;border-radius:30px;font-size:13px;}
+  .wrap{max-width:1060px;margin:0 auto;padding:54px 20px;}
+  h2{text-align:center;font-size:27px;color:var(--navy);margin-bottom:6px;}
+  .sub{text-align:center;color:#6b7889;margin-bottom:30px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
+  a.svc{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid #e4e9f0;border-radius:16px;overflow:hidden;transition:.25s;position:relative;}
+  a.svc:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(11,31,58,.16);border-color:var(--blue);}
+  a.svc .thumb{height:120px;background-size:cover;background-position:center;position:relative;}
+  a.svc .thumb .ico{position:absolute;left:14px;bottom:-18px;width:44px;height:44px;border-radius:12px;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font-size:22px;}
+  a.svc .c{padding:26px 22px 22px;}
+  a.svc h3{color:var(--navy);font-size:18px;margin-bottom:6px;}
+  a.svc p{font-size:14px;color:#5e6b7b;}
+  a.svc .kw{display:block;margin-top:10px;font-size:12px;color:var(--blue);font-weight:600;}
+  a.svc.star::after{content:"⭐ 주력";position:absolute;top:12px;right:12px;font-size:11px;background:#d7263d;color:#fff;padding:3px 8px;border-radius:20px;}
+  .rentbox{margin-top:50px;border-radius:20px;padding:40px;text-align:center;color:#fff;
+    background:linear-gradient(120deg,rgba(9,24,48,.94),rgba(30,99,176,.9)),url('https://picsum.photos/seed/gjhubrent/1400/400') center/cover;}
+  .rentbox h2{color:#fff;margin-bottom:10px;}
+  .rentbox p{opacity:.92;max-width:640px;margin:0 auto 16px;}
+  .rentbox .price{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:18px;}
+  .rentbox .price span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:10px 16px;font-size:14px;}
+  .rentbox a{display:inline-block;background:var(--gold);color:#091830;font-weight:800;padding:14px 32px;border-radius:40px;text-decoration:none;}
+  footer{background:#06152b;color:#7e93b3;text-align:center;padding:26px;font-size:13px;}
+  @media(max-width:600px){.hero h1{font-size:28px;}}
+</style>
+</head>
+<body>
+<div class="portal"><span><b>경주ICT가이드</b> · 경주 정보통신 업체 정보 포털</span><a class="rentlink" href="#rent">▸ 광고 자리 임대</a></div>
+<section class="hero">
+  <div>
+    <span class="badge">경주 정보통신·관급 공사 업체 정보 포털</span>
+    <h1>경주ICT가이드</h1>
+    <p>재난예경보부터 CCTV·관급 납품까지 — 분야별 경주 정보통신 추천 업체를 한곳에서 찾으세요.</p>
+    <div class="fields"><span>재난예경보</span><span>전광판</span><span>음향영상</span><span>IoT</span><span>네트워크</span><span>CCTV</span><span>관급·조달</span><span>유지보수</span></div>
+  </div>
+</section>
+<div class="wrap">
+  <h2>분야별 추천 업체</h2>
+  <p class="sub">각 분야 페이지에서 검증된 경주 지역 업체를 확인하세요</p>
+  <div class="grid">
+    <a class="svc star" href="01_disaster-alert.html"><div class="thumb" style="background-image:linear-gradient(rgba(11,31,58,.2),rgba(11,31,58,.3)),url('https://picsum.photos/seed/gjdisaster/500/300')"><div class="ico">🚨</div></div><div class="c"><h3>재난예경보 시스템</h3><p>자동우량경보·비상경보·재난방송 설비</p><span class="kw">경주 재난예경보시스템</span></div></a>
+    <a class="svc" href="02_village-broadcast.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjvillage/500/300')"><div class="ico">📢</div></div><div class="c"><h3>마을방송·자동음성통보</h3><p>마을회관 옥외확성·디지털 마을방송</p><span class="kw">경주 마을방송시스템</span></div></a>
+    <a class="svc" href="03_led-display.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjled/500/300')"><div class="ico">💡</div></div><div class="c"><h3>전광판 (LED·행정)</h3><p>실내외 LED·행정안내전광판 제작 설치</p><span class="kw">경주 전광판 제작 설치</span></div></a>
+    <a class="svc" href="04_traffic-display.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjtraffic/500/300')"><div class="ico">🚦</div></div><div class="c"><h3>교통·버스정보 전광판</h3><p>BIT·VMS·주차안내·미세먼지 신호등</p><span class="kw">경주 교통 전광판</span></div></a>
+    <a class="svc" href="05_av-system.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjav/500/300')"><div class="ico">🎵</div></div><div class="c"><h3>음향·영상시설</h3><p>강당·체육관 음향, 전관방송, AV</p><span class="kw">경주 음향영상시설 공사</span></div></a>
+    <a class="svc" href="06_iot-smart.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjiot/500/300')"><div class="ico">📡</div></div><div class="c"><h3>IoT·스마트시설</h3><p>스마트 가로등·원격검침·환경센서</p><span class="kw">경주 IoT 스마트시티 구축</span></div></a>
+    <a class="svc" href="07_network.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjnetwork/500/300')"><div class="ico">🖧</div></div><div class="c"><h3>네트워크 구축</h3><p>구내통신·광케이블·무선랜·보안</p><span class="kw">경주 네트워크 구축</span></div></a>
+    <a class="svc" href="08_cctv.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjcctv/500/300')"><div class="ico">📹</div></div><div class="c"><h3>CCTV·영상보안</h3><p>지능형 CCTV·IP카메라·통합관제</p><span class="kw">경주 CCTV 설치업체</span></div></a>
+    <a class="svc star" href="09_government.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjgov/500/300')"><div class="ico">🏛️</div></div><div class="c"><h3>관급·조달·나라장터</h3><p>관급 정보통신공사·관급자재 납품</p><span class="kw">경주 관급 정보통신공사</span></div></a>
+    <a class="svc" href="10_maintenance.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjmaint/500/300')"><div class="ico">🛠️</div></div><div class="c"><h3>유지보수·성능점검</h3><p>정보통신설비 정기점검·성능점검 대행</p><span class="kw">경주 정보통신설비 유지보수</span></div></a>
+  </div>
+
+  <div class="rentbox" id="rent">
+    <h2>📣 업체 입점·광고 문의</h2>
+    <p>경주에서 정보통신·관급 공사를 하는 업체라면, 검색 상위 노출 페이지의 광고 슬롯에 입점하세요. 검색으로 유입된 발주처·담당자에게 직접 노출됩니다.</p>
+    <br><a href="tel:054-624-0401">광고 자리 임대 문의 ▸</a>
+  </div>
+</div>
+<footer>경주ICT가이드 — 경주 정보통신·관급 공사 업체 정보 포털<br><small>분야별 추천 업체 정보 제공 및 광고 게재 포털입니다. (이미지는 데모이며 실제 사진으로 교체 예정)</small></footer>
+</body>
+</html>
