@@ -3,83 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>경주ICT가이드 | 경주 정보통신·관급 공사 업체 정보 포털</title>
-<meta name="description" content="경주 정보통신·관급 공사 업체 정보 포털. 재난예경보·전광판·음향영상·IoT·네트워크·CCTV·유지보수 분야별 추천 업체를 한눈에. 업체 입점·광고 문의 환영.">
-<meta name="keywords" content="경주 정보통신공사, 경주 관급 정보통신, 경주 재난예경보, 경주 전광판, 경주 CCTV, 경주 네트워크 구축, 경주 음향영상, 경주 정보통신설비 유지보수">
-<meta property="og:title" content="경주ICT가이드 | 경주 정보통신·관급 공사 업체 정보 포털">
-<meta property="og:description" content="분야별 경주 정보통신·관급 공사 추천 업체 정보. 업체 입점·광고 문의 환영.">
+<title>모두모아-경주 | 경주 전 업종 통합 정보 포털 (맛집·숙박·통신·인테리어 등)</title>
+<meta name="description" content="모두모아-경주 — 경주의 모든 업종을 한곳에. 카페·맛집·숙박·한복·체험·웨딩·병원·부동산·인테리어·정보통신까지 11개 업종 추천 업체 정보를 한눈에 모았습니다.">
+<meta name="keywords" content="경주 맛집, 경주 카페, 경주 숙박, 경주 한복, 경주 체험, 경주 웨딩, 경주 병원, 경주 부동산, 경주 인테리어, 경주 정보통신, 모두모아 경주">
+<meta property="og:title" content="모두모아-경주 | 경주 전 업종 통합 정보 포털">
+<meta property="og:description" content="경주의 모든 업종을 한곳에 모았습니다. 11개 업종 추천 업체 정보.">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
-  :root{--navy:#0b1f3a;--blue:#1e63b0;--gold:#d4af37;}
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:"Pretendard","Malgun Gothic",sans-serif;color:#1a2230;background:#fff;line-height:1.7;}
-  a{color:inherit;}
-  .portal{position:sticky;top:0;z-index:50;background:#091830;color:#cfe;font-size:13px;padding:10px 22px;display:flex;justify-content:space-between;align-items:center;}
-  .portal b{color:#fff;}.portal .rentlink{background:var(--gold);color:#091830;padding:5px 14px;border-radius:20px;font-weight:700;text-decoration:none;}
-  .hero{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:80px 20px;
-        background:linear-gradient(120deg,rgba(11,31,58,.9),rgba(30,99,176,.78)),url('https://picsum.photos/seed/gjhub/1600/800') center/cover;}
-  .hero .badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);padding:7px 18px;border-radius:30px;font-size:14px;margin-bottom:16px;}
-  .hero h1{font-size:40px;font-weight:800;text-shadow:0 4px 22px rgba(0,0,0,.4);}
-  .hero p{font-size:18px;opacity:.95;margin-top:14px;max-width:720px;margin-left:auto;margin-right:auto;}
-  .hero .fields{margin-top:22px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;}
-  .hero .fields span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);padding:6px 14px;border-radius:30px;font-size:13px;}
-  .wrap{max-width:1060px;margin:0 auto;padding:54px 20px;}
-  h2{text-align:center;font-size:27px;color:var(--navy);margin-bottom:6px;}
-  .sub{text-align:center;color:#6b7889;margin-bottom:30px;}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
-  a.svc{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid #e4e9f0;border-radius:16px;overflow:hidden;transition:.25s;position:relative;}
-  a.svc:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(11,31,58,.16);border-color:var(--blue);}
-  a.svc .thumb{height:120px;background-size:cover;background-position:center;position:relative;}
-  a.svc .thumb .ico{position:absolute;left:14px;bottom:-18px;width:44px;height:44px;border-radius:12px;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font-size:22px;}
-  a.svc .c{padding:26px 22px 22px;}
-  a.svc h3{color:var(--navy);font-size:18px;margin-bottom:6px;}
-  a.svc p{font-size:14px;color:#5e6b7b;}
-  a.svc .kw{display:block;margin-top:10px;font-size:12px;color:var(--blue);font-weight:600;}
-  a.svc.star::after{content:"⭐ 주력";position:absolute;top:12px;right:12px;font-size:11px;background:#d7263d;color:#fff;padding:3px 8px;border-radius:20px;}
-  .rentbox{margin-top:50px;border-radius:20px;padding:40px;text-align:center;color:#fff;
-    background:linear-gradient(120deg,rgba(9,24,48,.94),rgba(30,99,176,.9)),url('https://picsum.photos/seed/gjhubrent/1400/400') center/cover;}
-  .rentbox h2{color:#fff;margin-bottom:10px;}
-  .rentbox p{opacity:.92;max-width:640px;margin:0 auto 16px;}
-  .rentbox .price{display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:18px;}
-  .rentbox .price span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:10px 16px;font-size:14px;}
-  .rentbox a{display:inline-block;background:var(--gold);color:#091830;font-weight:800;padding:14px 32px;border-radius:40px;text-decoration:none;}
-  footer{background:#06152b;color:#7e93b3;text-align:center;padding:26px;font-size:13px;}
-  @media(max-width:600px){.hero h1{font-size:28px;}}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Pretendard","Malgun Gothic",sans-serif;color:#1d2433;background:#fff;line-height:1.6;}
+a{color:inherit;text-decoration:none;}
+.bar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #eee;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;}
+.bar .logo{font-size:20px;font-weight:900;color:#ff6b35;}
+.bar .logo span{color:#1d2433;}
+.bar a.ad{background:#1d2433;color:#fff;font-size:13px;font-weight:700;padding:7px 14px;border-radius:20px;}
+.hero{background:linear-gradient(120deg,#ff6b35,#ff9558);color:#fff;padding:48px 20px 56px;text-align:center;}
+.hero h1{font-size:32px;font-weight:900;}
+.hero p{margin-top:10px;opacity:.95;font-size:16px;}
+.search{max-width:560px;margin:22px auto 0;background:#fff;border-radius:40px;display:flex;align-items:center;padding:6px 6px 6px 20px;box-shadow:0 10px 30px rgba(0,0,0,.18);}
+.search input{flex:1;border:0;outline:0;font-size:16px;padding:10px 0;color:#333;}
+.search button{background:#ff6b35;color:#fff;border:0;border-radius:30px;padding:12px 22px;font-weight:800;font-size:15px;cursor:pointer;}
+.wrap{max-width:1080px;margin:0 auto;padding:30px 16px 60px;}
+.sec{margin-top:34px;}
+.sec .head{display:flex;align-items:center;gap:10px;margin-bottom:14px;padding:0 4px;}
+.sec .head .ic{font-size:24px;}
+.sec .head h2{font-size:21px;font-weight:800;}
+.sec .head .cnt{color:#9aa3b2;font-size:13px;font-weight:600;}
+.row{display:flex;gap:12px;overflow-x:auto;padding:4px 4px 16px;scroll-snap-type:x proximity;}
+.row::-webkit-scrollbar{height:8px;}
+.row::-webkit-scrollbar-thumb{background:#e2e6ec;border-radius:10px;}
+.tile{flex:0 0 152px;scroll-snap-align:start;}
+.tile .thumb{position:relative;height:112px;border-radius:14px;background-size:cover;background-position:center;box-shadow:0 4px 12px rgba(0,0,0,.1);overflow:hidden;}
+.tile:hover .thumb{transform:translateY(-3px);transition:.2s;box-shadow:0 10px 22px rgba(0,0,0,.16);}
+.tile .t{margin-top:8px;font-size:14px;font-weight:700;padding:0 2px;}
+.tile .sub{font-size:12px;color:#9aa3b2;}
+.tile.soon .thumb::after{content:"준비중";position:absolute;top:8px;right:8px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:2px 8px;border-radius:20px;}
+.tile.live .thumb::after{content:"OPEN";position:absolute;top:8px;right:8px;background:#ff6b35;color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;}
+.adbox{margin-top:50px;background:#1d2433;color:#fff;border-radius:18px;padding:34px;text-align:center;}
+.adbox h2{color:#ff9558;font-size:20px;margin-bottom:8px;}
+.adbox a{display:inline-block;margin-top:14px;background:#ff6b35;color:#fff;font-weight:800;padding:12px 28px;border-radius:30px;}
+footer{background:#11151d;color:#7b8494;text-align:center;padding:26px;font-size:13px;}
+@media(max-width:600px){.hero h1{font-size:25px;}}
 </style>
 </head>
 <body>
-<div class="portal"><span><b>경주ICT가이드</b> · 경주 정보통신 업체 정보 포털</span><a class="rentlink" href="#rent">▸ 광고 자리 임대</a></div>
+<div class="bar"><a class="logo" href="index.html">모두모아<span>-경주</span></a><a class="ad" href="#ad">▸ 광고·입점 문의</a></div>
 <section class="hero">
-  <div>
-    <span class="badge">경주 정보통신·관급 공사 업체 정보 포털</span>
-    <h1>경주ICT가이드</h1>
-    <p>재난예경보부터 CCTV·관급 납품까지 — 분야별 경주 정보통신 추천 업체를 한곳에서 찾으세요.</p>
-    <div class="fields"><span>재난예경보</span><span>전광판</span><span>음향영상</span><span>IoT</span><span>네트워크</span><span>CCTV</span><span>관급·조달</span><span>유지보수</span></div>
-  </div>
+  <h1>경주의 모든 것, 한곳에 모두모아</h1>
+  <p>맛집·카페·숙박부터 정보통신·관급공사까지 — 경주 11개 업종 추천 업체를 한눈에</p>
+  <div class="search"><input placeholder="찾으시는 업종이나 업체를 검색하세요" disabled><button>검색</button></div>
 </section>
 <div class="wrap">
-  <h2>분야별 추천 업체</h2>
-  <p class="sub">각 분야 페이지에서 검증된 경주 지역 업체를 확인하세요</p>
-  <div class="grid">
-    <a class="svc star" href="01_disaster-alert.html"><div class="thumb" style="background-image:linear-gradient(rgba(11,31,58,.2),rgba(11,31,58,.3)),url('https://picsum.photos/seed/gjdisaster/500/300')"><div class="ico">🚨</div></div><div class="c"><h3>재난예경보 시스템</h3><p>자동우량경보·비상경보·재난방송 설비</p><span class="kw">경주 재난예경보시스템</span></div></a>
-    <a class="svc" href="02_village-broadcast.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjvillage/500/300')"><div class="ico">📢</div></div><div class="c"><h3>마을방송·자동음성통보</h3><p>마을회관 옥외확성·디지털 마을방송</p><span class="kw">경주 마을방송시스템</span></div></a>
-    <a class="svc" href="03_led-display.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjled/500/300')"><div class="ico">💡</div></div><div class="c"><h3>전광판 (LED·행정)</h3><p>실내외 LED·행정안내전광판 제작 설치</p><span class="kw">경주 전광판 제작 설치</span></div></a>
-    <a class="svc" href="04_traffic-display.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjtraffic/500/300')"><div class="ico">🚦</div></div><div class="c"><h3>교통·버스정보 전광판</h3><p>BIT·VMS·주차안내·미세먼지 신호등</p><span class="kw">경주 교통 전광판</span></div></a>
-    <a class="svc" href="05_av-system.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjav/500/300')"><div class="ico">🎵</div></div><div class="c"><h3>음향·영상시설</h3><p>강당·체육관 음향, 전관방송, AV</p><span class="kw">경주 음향영상시설 공사</span></div></a>
-    <a class="svc" href="06_iot-smart.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjiot/500/300')"><div class="ico">📡</div></div><div class="c"><h3>IoT·스마트시설</h3><p>스마트 가로등·원격검침·환경센서</p><span class="kw">경주 IoT 스마트시티 구축</span></div></a>
-    <a class="svc" href="07_network.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjnetwork/500/300')"><div class="ico">🖧</div></div><div class="c"><h3>네트워크 구축</h3><p>구내통신·광케이블·무선랜·보안</p><span class="kw">경주 네트워크 구축</span></div></a>
-    <a class="svc" href="08_cctv.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjcctv/500/300')"><div class="ico">📹</div></div><div class="c"><h3>CCTV·영상보안</h3><p>지능형 CCTV·IP카메라·통합관제</p><span class="kw">경주 CCTV 설치업체</span></div></a>
-    <a class="svc star" href="09_government.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjgov/500/300')"><div class="ico">🏛️</div></div><div class="c"><h3>관급·조달·나라장터</h3><p>관급 정보통신공사·관급자재 납품</p><span class="kw">경주 관급 정보통신공사</span></div></a>
-    <a class="svc" href="10_maintenance.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/gjmaint/500/300')"><div class="ico">🛠️</div></div><div class="c"><h3>유지보수·성능점검</h3><p>정보통신설비 정기점검·성능점검 대행</p><span class="kw">경주 정보통신설비 유지보수</span></div></a>
-  </div>
-
-  <div class="rentbox" id="rent">
+<section class="sec">
+  <div class="head"><span class="ic">📡</span><h2>정보통신·ICT</h2><span class="cnt">10개 하위유형 · 10 OPEN</span></div>
+  <div class="row"><a class="tile live" href="01_disaster-alert.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mdisaster/300/220')"></div><div class="t">재난예경보시스템</div></a><a class="tile live" href="02_village-broadcast.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mvillage/300/220')"></div><div class="t">마을방송</div></a><a class="tile live" href="03_led-display.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mled/300/220')"></div><div class="t">전광판</div></a><a class="tile live" href="04_traffic-display.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mtraffic/300/220')"></div><div class="t">교통전광판</div></a><a class="tile live" href="05_av-system.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mav/300/220')"></div><div class="t">음향영상시설</div></a><a class="tile live" href="06_iot-smart.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/miot/300/220')"></div><div class="t">IoT·스마트시티</div></a><a class="tile live" href="07_network.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mnet/300/220')"></div><div class="t">네트워크 구축</div></a><a class="tile live" href="08_cctv.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mcctv/300/220')"></div><div class="t">CCTV·영상보안</div></a><a class="tile live" href="09_government.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mgov/300/220')"></div><div class="t">관급·조달</div></a><a class="tile live" href="10_maintenance.html"><div class="thumb" style="background-image:url('https://picsum.photos/seed/mmaint/300/220')"></div><div class="t">정보통신 유지보수</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">☕</span><h2>카페·커피</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe0/300/220')"></div><div class="t">감성카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe1/300/220')"></div><div class="t">한옥카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe2/300/220')"></div><div class="t">루프탑카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe3/300/220')"></div><div class="t">브런치카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe4/300/220')"></div><div class="t">애견카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe5/300/220')"></div><div class="t">키즈카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe6/300/220')"></div><div class="t">디저트카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe7/300/220')"></div><div class="t">북카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe8/300/220')"></div><div class="t">24시카페</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/cafe9/300/220')"></div><div class="t">뷰카페</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">🍽️</span><h2>맛집·음식점</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food0/300/220')"></div><div class="t">한정식</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food1/300/220')"></div><div class="t">쌈밥</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food2/300/220')"></div><div class="t">한우·고기</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food3/300/220')"></div><div class="t">횟집·물회</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food4/300/220')"></div><div class="t">분식</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food5/300/220')"></div><div class="t">일식</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food6/300/220')"></div><div class="t">중식</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food7/300/220')"></div><div class="t">양식·파스타</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food8/300/220')"></div><div class="t">현지인맛집</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/food9/300/220')"></div><div class="t">야식</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">🏨</span><h2>숙박·펜션</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay0/300/220')"></div><div class="t">오션뷰펜션</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay1/300/220')"></div><div class="t">한옥스테이</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay2/300/220')"></div><div class="t">풀빌라</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay3/300/220')"></div><div class="t">독채펜션</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay4/300/220')"></div><div class="t">글램핑</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay5/300/220')"></div><div class="t">게스트하우스</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay6/300/220')"></div><div class="t">호텔</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay7/300/220')"></div><div class="t">리조트</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay8/300/220')"></div><div class="t">키즈펜션</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/stay9/300/220')"></div><div class="t">애견펜션</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">👘</span><h2>한복대여</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok0/300/220')"></div><div class="t">전통한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok1/300/220')"></div><div class="t">퓨전한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok2/300/220')"></div><div class="t">커플한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok3/300/220')"></div><div class="t">가족한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok4/300/220')"></div><div class="t">어린이한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok5/300/220')"></div><div class="t">생활한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok6/300/220')"></div><div class="t">고급한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok7/300/220')"></div><div class="t">남자한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok8/300/220')"></div><div class="t">신부한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/hanbok9/300/220')"></div><div class="t">캐주얼한복</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">🎯</span><h2>체험·액티비티</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp0/300/220')"></div><div class="t">도자기체험</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp1/300/220')"></div><div class="t">다도체험</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp2/300/220')"></div><div class="t">한지공예</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp3/300/220')"></div><div class="t">전통놀이</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp4/300/220')"></div><div class="t">VR체험</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp5/300/220')"></div><div class="t">방탈출</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp6/300/220')"></div><div class="t">ATV</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp7/300/220')"></div><div class="t">자전거대여</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp8/300/220')"></div><div class="t">쿠킹클래스</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/exp9/300/220')"></div><div class="t">원데이클래스</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">🍰</span><h2>디저트·빵집</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert0/300/220')"></div><div class="t">황남빵</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert1/300/220')"></div><div class="t">경주빵</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert2/300/220')"></div><div class="t">베이커리</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert3/300/220')"></div><div class="t">케이크</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert4/300/220')"></div><div class="t">마카롱</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert5/300/220')"></div><div class="t">빙수</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert6/300/220')"></div><div class="t">와플</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert7/300/220')"></div><div class="t">도넛</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert8/300/220')"></div><div class="t">수제초콜릿</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/dessert9/300/220')"></div><div class="t">떡·한과</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">💍</span><h2>웨딩·스드메</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed0/300/220')"></div><div class="t">웨딩홀</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed1/300/220')"></div><div class="t">스튜디오</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed2/300/220')"></div><div class="t">드레스</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed3/300/220')"></div><div class="t">메이크업</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed4/300/220')"></div><div class="t">예물</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed5/300/220')"></div><div class="t">청첩장</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed6/300/220')"></div><div class="t">혼주한복</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed7/300/220')"></div><div class="t">본식스냅</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed8/300/220')"></div><div class="t">폐백음식</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/wed9/300/220')"></div><div class="t">허니문</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">🏥</span><h2>병원·한의원</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med0/300/220')"></div><div class="t">내과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med1/300/220')"></div><div class="t">치과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med2/300/220')"></div><div class="t">한의원</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med3/300/220')"></div><div class="t">정형외과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med4/300/220')"></div><div class="t">피부과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med5/300/220')"></div><div class="t">안과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med6/300/220')"></div><div class="t">소아과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med7/300/220')"></div><div class="t">산부인과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med8/300/220')"></div><div class="t">이비인후과</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/med9/300/220')"></div><div class="t">통증의학과</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">🏢</span><h2>부동산·공인중개</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty0/300/220')"></div><div class="t">아파트매매</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty1/300/220')"></div><div class="t">전월세</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty2/300/220')"></div><div class="t">상가임대</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty3/300/220')"></div><div class="t">토지</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty4/300/220')"></div><div class="t">원룸</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty5/300/220')"></div><div class="t">빌라</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty6/300/220')"></div><div class="t">사무실</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty7/300/220')"></div><div class="t">점포</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty8/300/220')"></div><div class="t">신규분양</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/realty9/300/220')"></div><div class="t">재개발</div></a></div>
+</section>
+<section class="sec">
+  <div class="head"><span class="ic">🛋️</span><h2>인테리어</h2><span class="cnt">10개 하위유형 · 준비중</span></div>
+  <div class="row"><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior0/300/220')"></div><div class="t">주택인테리어</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior1/300/220')"></div><div class="t">상가인테리어</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior2/300/220')"></div><div class="t">사무실인테리어</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior3/300/220')"></div><div class="t">카페인테리어</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior4/300/220')"></div><div class="t">욕실리모델링</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior5/300/220')"></div><div class="t">주방리모델링</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior6/300/220')"></div><div class="t">도배·장판</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior7/300/220')"></div><div class="t">마루·타일</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior8/300/220')"></div><div class="t">조명</div></a><a class="tile soon" href="javascript:void(0)"><div class="thumb" style="background-image:url('https://picsum.photos/seed/interior9/300/220')"></div><div class="t">붙박이장</div></a></div>
+</section>
+  <div class="adbox" id="ad">
     <h2>📣 업체 입점·광고 문의</h2>
-    <p>경주에서 정보통신·관급 공사를 하는 업체라면, 검색 상위 노출 페이지의 광고 슬롯에 입점하세요. 검색으로 유입된 발주처·담당자에게 직접 노출됩니다.</p>
-    <br><a href="tel:054-624-0401">광고 자리 임대 문의 ▸</a>
+    <p>경주에서 사업하신다면 해당 업종·키워드 페이지에 입점해 검색 유입을 받으세요.</p>
+    <a href="tel:054-624-0401">광고·입점 문의 ▸</a>
   </div>
 </div>
-<footer>경주ICT가이드 — 경주 정보통신·관급 공사 업체 정보 포털<br><small>분야별 추천 업체 정보 제공 및 광고 게재 포털입니다. (이미지는 데모이며 실제 사진으로 교체 예정)</small></footer>
+<footer>모두모아-경주 — 경주 전 업종 통합 정보 포털<br><small>이미지는 데모이며 실제 사진으로 교체 예정 · 정보통신 업종 OPEN, 그 외 업종 순차 오픈 예정</small></footer>
 </body>
 </html>
