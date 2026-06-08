@@ -35,14 +35,16 @@ footer{background:#11151d;color:#7b8494;text-align:center;padding:26px;font-size
 .sec .head .link{display:flex;align-items:center;gap:10px;flex:1;}
 .sec .head .ic{font-size:24px;}.sec .head h2{font-size:21px;font-weight:800;}
 .sec .head .more{color:#ff6b35;font-size:14px;font-weight:700;white-space:nowrap;}
-.rowwrap{position:relative;}
+.rowwrap{position:relative;padding:0 54px;}
 .row{display:flex;gap:12px;overflow-x:auto;padding:4px 4px 16px;scroll-snap-type:x proximity;scroll-behavior:smooth;}
 .row::-webkit-scrollbar{height:8px;}.row::-webkit-scrollbar-thumb{background:#e2e6ec;border-radius:10px;}
-.row .tile{flex:0 0 152px;scroll-snap-align:start;}
-.arrow{position:absolute;top:32px;z-index:10;width:40px;height:40px;border-radius:50%;border:1px solid #eee;background:#fff;box-shadow:0 3px 12px rgba(0,0,0,.18);font-size:20px;line-height:1;cursor:pointer;color:#333;display:flex;align-items:center;justify-content:center;}
-.arrow.left{left:-8px;}.arrow.right{right:-8px;}
+.row .tile{flex:0 0 210px;scroll-snap-align:start;}
+.row .tile .thumb{height:155px;}
+.row .tile .t{font-size:15px;}
+.arrow{position:absolute;top:60px;z-index:10;width:44px;height:44px;border-radius:50%;border:1px solid #eee;background:#fff;box-shadow:0 3px 14px rgba(0,0,0,.2);font-size:22px;line-height:1;cursor:pointer;color:#333;display:flex;align-items:center;justify-content:center;}
+.arrow.left{left:4px;}.arrow.right{right:4px;}
 .arrow:hover{background:#ff6b35;color:#fff;border-color:#ff6b35;}
-@media(max-width:600px){.hero h1{font-size:25px;}.arrow{display:none;}}
+@media(max-width:600px){.hero h1{font-size:25px;}.arrow{display:none;}.rowwrap{padding:0;}}
 </style></head>
 <body>
 <div class="bar"><a class="logo" href="index.html">모두모아<span>-경주</span></a><a class="ad" href="#ad">▸ 광고·입점 문의</a></div>
@@ -143,5 +145,5 @@ footer{background:#11151d;color:#7b8494;text-align:center;padding:26px;font-size
   <div class="adbox" id="ad"><h2>📣 업체 입점·광고 문의</h2><p>경주에서 사업하신다면 해당 업종·키워드 페이지에 입점해 검색 유입을 받으세요.</p><a href="tel:054-624-0401">광고·입점 문의 ▸</a></div>
 </div>
 <footer>모두모아-경주 — 경주 전 업종 통합 정보 포털<br><small>이미지는 데모이며 실제 사진으로 교체 예정 · 정보통신 업종 OPEN, 그 외 순차 오픈 예정</small></footer>
-<script>function scrollRow(b,d){var r=b.parentElement.querySelector('.row');r.scrollBy({left:d*340,behavior:'smooth'});}</script>
+<script>function scrollRow(b,d){var r=b.parentElement.querySelector('.row');r.scrollBy({left:d*460,behavior:'smooth'});}</script>
 </body></html>

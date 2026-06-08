@@ -30,8 +30,11 @@ footer{background:#11151d;color:#7b8494;text-align:center;padding:26px;font-size
 .crumb{max-width:1080px;margin:0 auto;padding:14px 18px 0;font-size:13px;color:#9aa3b2;}
 .crumb a{color:#ff6b35;}
 .wrap{max-width:1080px;margin:0 auto;padding:18px 18px 60px;}
-.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:16px;}
-.lgrid .tile .thumb{height:120px;}
+.lgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+.lgrid .tile .thumb{height:165px;}
+.lgrid .tile .t{font-size:15px;}
+@media(max-width:900px){.lgrid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:560px){.lgrid{grid-template-columns:repeat(2,1fr);}}
 </style></head>
 <body>
 <div class="bar"><a class="logo" href="index.html">모두모아<span>-경주</span></a><a class="ad" href="#ad">▸ 광고·입점 문의</a></div>
